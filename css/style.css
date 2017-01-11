@@ -1,0 +1,61 @@
+#main-content {
+	display: none;
+}
+
+table {
+	font-size:18px;
+	border-spacing: 0px;
+	cursor:pointer;
+}
+
+table tr:hover {
+ background: #c7c7c7;
+}
+
+table tr td,th{
+	padding: 5px;
+}
+.selected {
+	background: grey;
+}
+.selected:hover{
+	background: grey;
+}
+
+#wrapper {
+	width: 500px;
+	height:auto;
+	margin-top: 50px;
+	padding: 10px;
+	background: #cdcdcd;
+	font-size: 18px;
+	display: none;
+}
+#wrappew form input {
+	padding:5px;
+	margin:3px 10px;
+}
+#save {
+	margin-top: 10px;
+	padding:5 10px;
+}
+
+
+tr.over {
+  background: #e7e4c8;
+}
+
+#login-form {
+	width: 300px;
+	margin: 50px auto;
+}
+
+#login-form input {
+		margin: 5px;
+		padding: 5px;
+}
+#login-form button {
+		padding: 10px;
+		margin-top:20px;
+		margin-left: 5px;
+}

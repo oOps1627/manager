@@ -1,0 +1,106 @@
+<html>
+	<head>
+	 <meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.js"></script>
+	</head>
+
+	<body>
+
+		<form action="" id="login-form">
+			<br>
+			<input type="text" id="login"> login
+			<br> 
+			<input type="text" id="password"> password
+			<br> 
+			<button id="enter">sign in</button>
+		</form>
+
+		<div id="main-content">
+		<table id="table">
+			<thead>
+				<tr>
+					<th data-type="number">Id</th>
+					<th data-type="date">Date</th>
+					<th data-type="string">Time</th>
+					<th data-type="string">Nickname</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr draggable="true">
+					<td>1</td>
+					<td>02.01.2017</td>
+					<td>23:35</td>
+					<td>Andy</td>
+				</tr>
+				<tr draggable="true">
+					<td>2</td>
+					<td>03.09.2016</td>
+					<td>23:43</td>
+					<td>Rost</td>
+				</tr>
+				<tr draggable="true">
+					<td>3</td>
+					<td>03.01.2017</td>
+					<td>08:34</td>
+					<td>Micky</td>
+				</tr>
+				<tr draggable="true">
+					<td>4</td>
+					<td>0701.2017</td>
+					<td>12:41</td>
+					<td>Jon</td>
+				</tr>
+
+			</tbody>
+		</table>
+		<br>
+<button id="edit" disabled="disabled">Edit</button>
+<button id="delete" disabled="disabled">Delete</button>
+<button id="add">Add</button>
+<div id="wrapper">
+
+	<form action="" id="form">
+		<br>
+		<input type="text" id="inputId"> Id
+		<br> 
+		<input type="text" id="inputDate"> Date
+		<br> 
+		<input type="text" id="inputTime"> Time
+		<br>
+		<input type="text" id="inputNickname"> Nickname
+		<br>
+		<center><button id="save">Save</button></center>
+	</form>
+</div>
+</div>
+<script>
+//var btnEnter = document.getElementById("enter");
+//var mainContent = document.getElementById("main-content");
+//var loginForm = document.getElementById("loginForm");
+
+//btnEnter.onclick = function() {
+//	if(login.value == 1 && password.value == 1) {
+//		mainContent.show();
+		//loginForm.fadeOut();
+//		return false
+//	} else {
+//		alert("Неправильний логін або пароль")
+//		return false
+//	}
+//}
+$("#enter").on("click", function() {
+	if($("#login").val() == 1 && $("#password").val() == 1) {
+				$("#login-form").fadeOut(150);
+		setTimeout( function() {$("#main-content").show()
+		}, 200);
+		return false
+	} else {
+		alert("Неправильний логін або пароль")
+	}
+})
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>
